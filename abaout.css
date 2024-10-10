@@ -1,0 +1,83 @@
+/* about */
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about .row .image{
+    flex: 1 1 30rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+.about .row .content span{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.about .row .content h3{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.about .row .content p{
+    font-size: 1.4rem;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about .row .content .feature-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about .row .content .feature-list .feature-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.about .row .content .feature-list .feature-item i{
+    color: var(--white);
+    font-size: 2rem;
+    background: var(--main-color);
+    margin: .5rem 0;
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+.about .row .content .feature-list .feature-item .text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.about .row .content .feature-list .feature-item h4{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-block-end: -.6rem;
+}
+
+.about .row .content .feature-list .feature-item p{
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.about .row .content .btn{
+    margin: 3rem 0;
+}
+
+/* end */

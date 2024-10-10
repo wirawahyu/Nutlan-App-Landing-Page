@@ -1,0 +1,142 @@
+/* header */
+
+.header{
+    position: fixed;
+    top: 0; left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    background: var(--bg);
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+.header .logo i{
+    color: var(--main-color);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--primary-color);
+    padding-block: 1.6rem;
+    position: relative;
+}
+
+.header .navbar a::before{
+    content: '';
+    position: absolute;
+    height: .3rem;
+    border-block: .1rem solid var(--main-color);
+    bottom: .5rem;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: .5s ease;
+}
+
+.header .navbar a:is(:hover, :focus)::before{
+    transform: scale(1);
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    text-align: center;
+    border-radius: .5rem;
+    margin-left: .5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    color: var(--white);
+    background: var(--primary-color);
+}
+
+#menu{
+    display: none;
+}
+
+.header .login-form{
+    position: absolute;
+    top: 115%; right: -105%;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3{
+    color: #222;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: .7rem;
+}
+
+.header .login-form .box{
+    margin: .7rem 0;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding: 1rem 1.2rem;
+    font-size: 1.5rem;
+    color: #222;
+    text-transform: none;
+    width: 100%;
+}
+
+.header .login-form .remember{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .7rem 0;
+}
+
+.header .login-form .remember label{
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.header .login-form .btn{
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.header .login-form p{
+    color: #666;
+    padding-top: .7rem;
+    font-size: 1.4rem;
+}
+
+.header .login-form p a{
+    color: var(--main-color);
+}
+
+.header .login-form p a:hover{
+    text-decoration: underline;
+}
+
+/* end */

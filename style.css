@@ -375,58 +375,6 @@ section{
 
 /* end */
 
-/* pricing */
-
-.pricing .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-}
-
-.pricing .box-container .box{
-    padding: 2rem 0;
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    text-align: center;
-}
-
-.pricing .box-container .box:nth-child(2){
-    transform: scale(1.03);
-    background: #eaf1ff;
-}
-
-.pricing .box-container .box h3{
-    background: var(--main-color);
-    color: var(--primary-color);
-    padding: 1.5rem 0;
-    font-size: 2rem;
-}
-
-.pricing .box-container .box h4{
-    color: var(--primary-color);
-    padding-top: 2rem;
-    font-size: 4rem;
-}
-
-.pricing .box-container .box ul{
-    list-style-type: none;
-    padding: 1rem 0;
-}
-
-.pricing .box-container .box ul li{
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    padding: 1rem 0;
-}
-
-.pricing .box-container .box ul li i{
-    color: var(--main-color);
-    padding-right: .5rem;
-}
-
-/* end */
 
 /* review */
 
@@ -520,69 +468,6 @@ section{
 
 .deal .content .btn2:hover{
     background: var(--primary-color);
-}
-
-/* end */
-
-/* team */
-
-.team .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 2rem;
-}
-
-.team .box-container .box{
-    text-align: center;
-}
-
-.team .box-container .box .image{
-    height: 35rem;
-    width: 100%;
-    padding: 1.1rem;
-    overflow: hidden;
-}
-
-.team .box-container .box .image img{
-    height: 100%;
-    width: 100%;
-    border-radius: 5rem 0 5rem 0;
-    object-fit: cover;
-}
-
-.team .box-container .box .content{
-    padding: 2rem;
-    padding-top: 0;
-}
-
-.team .box-container .box .content h3{
-    color: var(--primary-color);
-    font-size: 2.5rem;
-}
-
-.team .box-container .box .content h4{
-    font-size: 1.7rem;
-    color: var(--main-color);
-    padding-bottom: 1rem;
-}
-
-.team .box-container .box .content .share i{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    border: .1rem solid var(--primary-color);
-    color: var(--primary-color);
-    font-size: 2rem;
-    border-radius: .5rem;
-    margin-left: .5rem;
-    box-shadow: var(--box-shadow);
-    cursor: pointer;
-}
-
-.team .box-container .box .content .share i:hover{
-    color: var(--white);
-    background: var(--main-color);
-    border: none;
 }
 
 /* end */
